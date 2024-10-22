@@ -3,7 +3,7 @@ def encode(password):
     pass_list = list(password)
     encode_str = ""
     for x in pass_list:
-        encode_str += str(int(x)+3)
+        encode_str += str((int(x)+3)%10)
     return encode_str
 
 #Sephora Pierre-Louis

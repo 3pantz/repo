@@ -11,7 +11,7 @@ def decode(password):
 
 def main():
     while True:
-        print("Main\n-------------\n1. Encode\n2. Decode\n3. Quit")
+        print("Menu\n-------------\n1. Encode\n2. Decode\n3. Quit")
         print()
         option = int(input("Please enter an option: "))
 
@@ -23,6 +23,6 @@ def main():
             pass
         elif option == 3:
             break
-
+        print()
 if __name__ == '__main__':
     main()

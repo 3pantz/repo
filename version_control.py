@@ -6,8 +6,18 @@ def encode(password):
         encode_str += str(int(x)+3)
     return encode_str
 
+#Sephora Pierre-Louis
 def decode(password):
-    pass
+    password_list = list(password)
+    encoded_list = []
+    for item in password_list:
+        item = int(item)
+        item -= 3
+        encoded_list.append(str(item))
+
+    encoded_string = ''.join(encoded_list)
+
+    return encoded_string
 
 def main():
     while True:
@@ -20,7 +30,9 @@ def main():
             print("Your password has been encoded and stored!")
             password = encode(password)
         elif option == 2:
-            pass
+            #Sephora Pierre-Louis
+            print("The encoded password is " + password + ", and the original password is " + decode(password) + ".")
+
         elif option == 3:
             break
         print()
